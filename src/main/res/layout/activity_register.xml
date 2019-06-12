@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.hangman.RegisterActivity"
+        android:background="#ECE4B7">
+
+    <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:padding="20dp"
+            android:background="@drawable/login_rectangle"
+
+            android:orientation="vertical"
+            android:gravity="center" android:id="@+id/linearLayout" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent">
+        <EditText android:layout_width="match_parent" android:layout_height="50dp"
+                  android:id="@+id/login"
+                  android:hint="Login"/>
+        <EditText android:layout_width="match_parent" android:layout_height="50dp"
+                  android:id="@+id/password"
+                  android:hint="Password"/>
+        <Button android:layout_width="match_parent" android:layout_height="50dp"
+                android:id="@+id/confirm" android:gravity="center"
+                android:text="Register"
+                android:background="@drawable/action_button"/>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

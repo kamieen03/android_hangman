@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            tools:context="com.example.hangman.MainActivity"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:background="#ECE4B7">
+
+        <!--current number of points-->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/totalString"
+                    android:gravity="start"
+                    android:text="Points: "
+                    android:textSize="20dp"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/totalLabel"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/totalString"/>
+        </LinearLayout>
+
+        <!--hangman picture-->
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/hangman_pic"
+                android:src="@drawable/h1"/>
+
+        <!--letters of word-->
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/letters_box"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="15dp">
+        </LinearLayout>
+
+        <!--clickable letters-->
+    <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:rowCount="5"
+            android:columnCount="6"
+            android:id="@+id/buttons"
+            android:alignmentMode="alignBounds"
+            android:background="@drawable/login_rectangle"
+            android:padding="10dp">
+        <Button android:text="A" android:layout_width="50dp"
+                android:id="@+id/buttonA"
+                android:background="@drawable/letter_button"
+                android:layout_margin="2dp"/>
+        <Button android:text="B" android:layout_width="50dp" android:id="@+id/buttonB"
+                android:background="@drawable/letter_button" android:layout_margin="2dp"/>
+        <Button android:text="C" android:layout_width="50dp" android:id="@+id/buttonC"
+                android:background="@drawable/letter_button" android:layout_margin="2dp"/>
+        <Button android:text="D" android:layout_width="50dp" android:id="@+id/buttonD"
+                android:background="@drawable/letter_button" android:layout_margin="2dp"/>
+        <Button android:text="E" android:layout_width="50dp" android:id="@+id/buttonE"
+                android:background="@drawable/letter_button" android:layout_margin="2dp"/>
+        <Button android:text="F" android:layout_width="50dp" android:id="@+id/buttonF"
+                android:background="@drawable/letter_button" android:layout_margin="2dp"/>
+        <Button android:text="G" android:layout_width="50dp" android:id="@+id/buttonG"
+                android:background="@drawable/letter_button" android:layout_margin="2dp"/>
+        <Button android:text="H" android:layout_width="50dp" android:id="@+id/buttonH"
+                android:background="@drawable/letter_button" android:layout_margin="2dp"/>
+        <Button android:text="I" android:layout_width="50dp" android:id="@+id/buttonI"
+                android:background="@drawable/letter_button" android:layout_margin="2dp"/>
+        <Button android:text="J" android:layout_width="50dp" android:id="@+id/buttonJ"
+                android:background="@drawable/letter_button" android:layout_margin="2dp"/>
+        <Button android:text="K" android:layout_width="50dp" android:id="@+id/buttonK"
+                android:background="@drawable/letter_button" android:layout_margin="2dp"/>
+        <Button android:text="L" android:layout_width="50dp" android:id="@+id/buttonL"
+                android:background="@drawable/letter_button" android:layout_margin="2dp"/>
+        <Button android:text="M" android:layout_width="50dp" android:id="@+id/buttonM"
+                android:background="@drawable/letter_button" android:layout_margin="2dp"/>
+        <Button android:text="N" android:layout_width="50dp" android:id="@+id/buttonN"
+                android:background="@drawable/letter_button" android:layout_margin="2dp"/>
+        <Button android:text="O" android:layout_width="50dp" android:id="@+id/buttonO"
+                android:background="@drawable/letter_button" android:layout_margin="2dp"/>
+        <Button android:text="P" android:layout_width="50dp" android:id="@+id/buttonP"
+                android:background="@drawable/letter_button" android:layout_margin="2dp"/>
+        <Button android:text="Q" android:layout_width="50dp" android:id="@+id/buttonQ"
+                android:background="@drawable/letter_button" android:layout_margin="2dp"/>
+        <Button android:text="R" android:layout_width="50dp" android:id="@+id/buttonR"
+                android:background="@drawable/letter_button" android:layout_margin="2dp"/>
+        <Button android:text="S" android:layout_width="50dp" android:id="@+id/buttonS"
+                android:background="@drawable/letter_button" android:layout_margin="2dp"/>
+        <Button android:text="T" android:layout_width="50dp" android:id="@+id/buttonT"
+                android:background="@drawable/letter_button" android:layout_margin="2dp"/>
+        <Button android:text="U" android:layout_width="50dp" android:id="@+id/buttonU"
+                android:background="@drawable/letter_button" android:layout_margin="2dp"/>
+        <Button android:text="V" android:layout_width="50dp" android:id="@+id/buttonV"
+                android:background="@drawable/letter_button" android:layout_margin="2dp"/>
+        <Button android:text="W" android:layout_width="50dp" android:id="@+id/buttonW"
+                android:background="@drawable/letter_button" android:layout_margin="2dp"/>
+        <Button android:text="X" android:layout_width="50dp" android:id="@+id/buttonX"
+                android:background="@drawable/letter_button" android:layout_margin="2dp"/>
+        <Button android:text="Y" android:layout_width="50dp" android:id="@+id/buttonY"
+                android:background="@drawable/letter_button"
+                android:layout_column="2"/>
+        <Button android:text="Z" android:layout_width="50dp" android:id="@+id/buttonZ"
+                android:layout_column="3" android:background="@drawable/letter_button"/>
+    </GridLayout>
+
+    </LinearLayout>
+
